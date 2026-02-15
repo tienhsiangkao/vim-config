@@ -115,7 +115,11 @@ call plug#end()
 " Theme / Airline
 " =========================
 set background=dark
-colorscheme gruvbox
+silent! colorscheme gruvbox
+if !exists('g:colors_name')
+  colorscheme default
+endif
+
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'gruvbox'
