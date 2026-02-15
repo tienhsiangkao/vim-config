@@ -21,7 +21,7 @@ curl -fsSL https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim \
   -o ~/.vim/autoload/plug.vim
 
 echo "[3/7] Installing .vimrc..."
-curl -fsSL "${RAW_BASE}/vimrc" -o ~/.vimrc
+curl -fsSL "${RAW_BASE}/.vimrc" -o ~/.vimrc
 
 echo "[4/7] Checking dependencies..."
 need() { command -v "$1" >/dev/null 2>&1 || echo "  - missing: $1"; }
